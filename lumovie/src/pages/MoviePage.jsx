@@ -26,7 +26,7 @@ function MoviePage() {
       }
     };
     fetchSeries();
-  }, [page]);
+  }, [page, type.type]);
 
   return (
     <div className="w-[95%] ml-auto mr-auto flex items-center justify-center flex-col gap-5 font-manrope">
