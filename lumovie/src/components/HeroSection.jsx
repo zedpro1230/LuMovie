@@ -5,9 +5,11 @@ import { useState, useEffect } from "react";
 import { FaClock } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FaPlay } from "react-icons/fa";
+import { useNavigate } from "react-router";
 import axios from "axios";
 function HeroSection() {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const navigate = useNavigate();
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     const fetchNewMovies = async () => {
@@ -149,6 +151,11 @@ function HeroSection() {
             cursor-pointer flex items-center justify-center transition-all duration-500 ease-in-out
             hover:bg-gradient-to-l hover:from-[#FFB200] hover:to-[#EB5B00] max-desktop:w-fit max-desktop:h-fit
             max-desktop:p-2"
+                        onClick={() => {
+                          navigate(`/movie/${movie.slug}`, {
+                            state: { slug: movie.slug },
+                          });
+                        }}
                       >
                         <IconContext.Provider
                           value={{ className: "size-[30px] fill-white" }}
