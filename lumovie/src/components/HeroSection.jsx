@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 import { FaPlay } from "react-icons/fa";
 import axios from "axios";
 function HeroSection() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     const fetchNewMovies = async () => {
@@ -41,7 +41,7 @@ function HeroSection() {
           }}
           slidesPerView={1}
           slidesPerGroup={1}
-          thumbs={{ swiper: thumbsSwiper }}
+          // thumbs={{ swiper: thumbsSwiper }}
           modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper2 w-full h-screen relative max-desktop:h-[400px]"
         >

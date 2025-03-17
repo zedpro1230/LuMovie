@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Pagination from "@mui/material/Pagination";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-import { menu } from "../utils";
+
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 function FilterMoviePage() {
@@ -467,7 +467,7 @@ function FilterMoviePage() {
   };
   console.log(movieData);
   return (
-    <div className="w-[95%]  ml-auto mr-auto flex items-center justify-center font-manrope">
+    <div className="w-[95%]  ml-auto mr-auto flex items-center justify-center font-manrope flex-col">
       <NavBar />
       <div className="mt-[150px] flex items-center justify-center gap-5 w-full flex-col">
         <h1
