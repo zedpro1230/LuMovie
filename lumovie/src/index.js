@@ -10,6 +10,7 @@ import TvShowPage from "./pages/TvShowPage";
 import MovieWithCountry from "./pages/MovieWithCountry";
 import MovieWithGenre from "./pages/MovieWithGerne";
 import MovieWithYear from "./pages/MovieWithYear";
+import FilterMoviePage from "./pages/FilterMoviePage";
 import { BrowserRouter, Routes, Route } from "react-router";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         <Route path="/country" element={<MovieWithCountry />} />
         <Route path="/genre" element={<MovieWithGenre />} />
         <Route path="/year" element={<MovieWithYear />} />
+        <Route path="/filter" element={<FilterMoviePage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

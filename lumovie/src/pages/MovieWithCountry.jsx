@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import { useState, useEffect } from "react";
 import Pagination from "@mui/material/Pagination";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 function MovieWithCountry() {
   const location = useLocation();
@@ -127,6 +128,7 @@ function MovieWithCountry() {
           },
         }}
       />
+      <Footer />
     </div>
   );
 }

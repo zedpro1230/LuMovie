@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import NavBar from "../components/NavBar";
 import { useNavigate } from "react-router";
+import Footer from "../components/Footer";
 function MovieDetail() {
   const location = useLocation(); // Get the location object
   const keyWord = location.state; // Access the state
@@ -219,6 +220,7 @@ function MovieDetail() {
           </ul>
         </article>
       )}
+      <Footer />
     </div>
   );
 }

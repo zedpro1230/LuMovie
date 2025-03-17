@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar";
 import { useState, useEffect } from "react";
 import Pagination from "@mui/material/Pagination";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 function TvShowPage() {
   const location = useLocation();
@@ -126,6 +127,7 @@ function TvShowPage() {
           },
         }}
       />
+      <Footer />
     </div>
   );
 }

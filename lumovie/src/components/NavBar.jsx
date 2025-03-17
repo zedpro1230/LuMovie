@@ -112,7 +112,12 @@ function NavBar() {
 
         <InputBar />
         {/* Link menu width > 1420px */}
-        <p className="text-white text-full hover:text-[#FFD369] max-desktop:hidden ">
+        <p
+          className="text-white text-full hover:text-[#FFD369] max-desktop:hidden cursor-pointer"
+          onClick={() => {
+            navigate("/filter");
+          }}
+        >
           Lọc Phim
         </p>
         <ul className="flex items-center justify-center gap-3.5  max-desktop:hidden">

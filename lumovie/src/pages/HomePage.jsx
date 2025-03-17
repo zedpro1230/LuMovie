@@ -9,6 +9,7 @@ import TvShow from "../components/TvShow";
 import Series from "../components/Series";
 import Movie from "../components/Movie";
 import Cartoon from "../components/Cartoon";
+import Footer from "../components/Footer";
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
       <Series />
       <Movie />
       <Cartoon />
+      <Footer />
     </div>
   );
 }
